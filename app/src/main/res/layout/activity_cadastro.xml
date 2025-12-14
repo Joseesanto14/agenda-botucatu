@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:fillViewport="true"
+    android:background="@color/GELO"
+    tools:context=".activities.CadastroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Botão voltar -->
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/AZUL_MEDIO"
+            android:drawableLeft="@drawable/ic_left_arrow"
+            android:onClick="voltarLogin"
+            android:text="Voltar"
+            android:textAppearance="@style/bt_voltar"
+            android:textColor="@color/CINZA_CLARO" />
+
+        <!-- Ícone principal -->
+        <ImageView
+            android:id="@+id/logoCadastro"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_calendar_logo"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Logo Agenda Botucatu" />
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/txtTituloApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agenda Botucatu"
+            android:textColor="@color/CINZA_CLARO"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:background="@drawable/edittextagenda_background"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="6dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtítulo -->
+
+        <TextView
+            android:id="@+id/txtSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Cadastro"
+            android:textAppearance="@style/titulo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Campo Nome -->
+        <EditText
+            android:id="@+id/edNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_perfil"
+            android:drawableTint="@color/DOURADO_QUENTE"
+            android:drawablePadding="12dp"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Campo Email -->
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Campo Senha -->
+        <EditText
+            android:id="@+id/edSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <!-- Botão Cadastrar -->
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/VERMELHO_ESCURO"
+            android:onClick="criarUsuario"
+            android:paddingVertical="12dp"
+            android:text="Cadastrar"
+            android:textColor="@color/CINZA_CLARO"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão Google -->
+        <LinearLayout
+            android:id="@+id/btGoogle"
+            android:layout_width="265dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_google_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_google_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Continue com o Google"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

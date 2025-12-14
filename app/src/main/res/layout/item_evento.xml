@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/GELO"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <!-- Cabeçalho: usuário e botão de favorito -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/txtNomeUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nome do Usuário"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btFavoritar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_star_outline"
+            android:contentDescription="Favoritar evento"
+            app:tint="#000000" />
+    </LinearLayout>
+
+    <!-- Imagem do evento -->
+    <ImageView
+        android:id="@+id/imgEvento"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/image_frame_background"
+        android:contentDescription="Imagem do evento"
+        android:scaleType="centerCrop" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTituloEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Sertanejo"
+        android:textColor="@color/CINZA_GRAFITE"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Local -->
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local: Praça Rubião Junior"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <!-- Data e hora -->
+    <TextView
+        android:id="@+id/txtDataHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data: 25/11/2025, 19h"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <!-- Categoria -->
+    <TextView
+        android:id="@+id/txtCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoria: Música ao Vivo, Sertanejo"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Ver mais detalhes -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_info"
+            android:layout_marginRight="4dp"
+            app:tint="@color/AZUL_MEDIO" />
+
+        <TextView
+            android:id="@+id/txtVerMais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver mais detalhes"
+            android:textColor="@color/AZUL_MEDIO"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

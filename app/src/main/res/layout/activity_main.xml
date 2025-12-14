@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FAFAFA"
+    tools:context=".activities.MainActivity">
+
+<ImageView
+android:id="@+id/imgLogo"
+android:layout_width="160dp"
+android:layout_height="160dp"
+android:src="@drawable/ic_calendar_logo"
+android:contentDescription="Logo Agenda Botucatu" />
+
+    <!-- NOME DO APP -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittextagenda_background"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"
+        android:text="Agenda Botucatu"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- SUBTÍTULO -->
+<TextView
+android:id="@+id/txtSubtitulo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:text="Sua cidade em um só app"
+android:textColor="#2C3E50"
+android:textSize="14sp"
+android:fontFamily="sans-serif" />
+
+</LinearLayout>

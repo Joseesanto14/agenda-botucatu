@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918560773310",
+    "project_id": "agendabotucatu-c93cf",
+    "storage_bucket": "agendabotucatu-c93cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918560773310:android:45ef9c3c0c0f6faca47aef",
+        "android_client_info": {
+          "package_name": "com.example.agendabotucatu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdj6vKXJWXP3Z-KjmthhB1jNbdv22bHGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

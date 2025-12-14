@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GELO"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="668dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="166dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="Logo Agenda Botucatu"
+            android:src="@drawable/ic_calendar_logo" />
+
+        <!-- NOME DO APP -->
+        <TextView
+            android:id="@+id/txtTituloApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittextagenda_background"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="Agenda Botucatu"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- LINHA DIVISÓRIA -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="24dp"
+            android:background="#DDDDDD" />
+
+        <!-- CAMPO EMAIL -->
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableRight="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- CAMPO SENHA -->
+        <EditText
+            android:id="@+id/edSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_background"
+            android:drawableRight="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- BOTÃO ENTRAR -->
+        <Button
+            android:id="@+id/btEntrar"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/VERMELHO_ESCURO"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="loginUsuario"
+            android:text="Entrar"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <!-- LINK CRIAR CONTA -->
+        <TextView
+            android:id="@+id/txtCriarConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif"
+            android:onClick="abrirCadastro"
+            android:text="Não tem conta? Toque aqui para criar"
+            android:textColor="@color/AZUL_MEDIO"
+            android:textStyle="bold" />
+
+        <!-- LINHA DIVISÓRIA -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="24dp"
+            android:background="#DDDDDD" />
+
+        <!-- BOTÃO GOOGLE -->
+        <LinearLayout
+            android:id="@+id/btGoogle"
+            android:layout_width="265dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_google_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_google_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Continue com o Google"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

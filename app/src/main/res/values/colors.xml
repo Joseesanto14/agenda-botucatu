@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="GELO">#FAFAFA</color>
+    <color name="VERMELHO_ESCURO">#8B0000</color>
+    <color name="DOURADO_QUENTE">#F1C40F</color>
+    <color name="CINZA_CLARO">#F8F9FA</color>
+    <color name="CINZA_GRAFITE">#2C3E50</color>
+    <color name="AZUL_MEDIO">#2980B9</color>
+</resources>
